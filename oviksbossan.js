@@ -24,28 +24,30 @@ async function getDonations(start) {
 }
 
 (async () => {
-    let start = -5;
+
+    const fileName = 'donations.json';
     let result = [];
+  
+    try{
+        const storedState = fs.readFileSync(fileName, 'utf8')
+        result = JSON.parse(storedState);
+    }
+    catch(err){}
 
     while(true){
-        await new Promise(resolve => setTimeout(resolve, 1000));
-        const donations = await getDonations(start+=5);
+        await new Promise(resolve => setTimeout(resolve, 5000));
+        const donations = await getDonations(0);
 
-        if(!donations.length){
-            fs.writeFileSync(`donations ${new Date().getTime()}.json`, JSON.stringify(result, null, 4));
-            console.log('No more donations.');
-            break;
-        }
-        else{
-            for(donation of donations){
-                console.log(donation);
+        for(donation of donations){
+
+            if(!result.find(d => d.timestamp === donation.timestamp)){
                 result.push(donation);
-            }
-
+            }       
         }
+
+        fs.writeFileSync(fileName, JSON.stringify(result)); //, null, 4
     }
 
-    console.log("Script ended successfully.");
 })();
 
 

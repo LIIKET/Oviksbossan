@@ -1,0 +1,70 @@
+<html>
+    <body>
+        <div id="donations">
+            <div id="donations-cards"></div>
+            <div id="end"></div>
+        </div>
+
+        <script>
+            const endDiv = document.getElementById('end');
+            const donationCardsDiv = document.getElementById('donations-cards');
+
+            setInterval(() => {
+
+                    var request = new XMLHttpRequest();
+                    
+                    request.open("GET", 'donations.json', false);
+                    request.setRequestHeader('Cache-Control', 'no-cache');
+                    request.onreadystatechange = function ()
+                    {
+                        if(request.readyState === 4)
+                        {
+                            if(request.status === 200 || request.status == 0)
+                            {
+                                let donations = JSON.parse(request.responseText);
+                                donations = donations.slice(1).slice(-10);
+
+                                let allDonationElements = Array.from(donationCardsDiv.childNodes);
+                                let donationElementsToAppend = [];
+                                
+                                for(donation of donations){
+                                    let name = donation.public ? donation.name : 'anonym';
+                                    let message = donation.message;
+                                    let amount = donation.hidden_amount ? `` : `${donation.amount}kr`;
+
+                                    if(!allDonationElements.find(e => e.dataset.timestamp === donation.timestamp)){
+                                        let el = document.createElement('div');
+                                        el.innerHTML = `<p>${donation.name} ${amount} ${message}</p>`;
+                                        el.dataset.timestamp = donation.timestamp;
+                                        donationElementsToAppend.push(el);
+                                    }
+                                }
+
+                                for(element of donationElementsToAppend){
+                                    donationCardsDiv.appendChild(element);
+                                }
+
+                                endDiv.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }
+                    }
+                    request.send(null);
+                
+            },1000);
+        </script>
+
+        <style>
+            #donations{
+                background: green;
+                color: white;
+                overflow-y: hidden;
+                max-height: 80px;
+                scroll-behavior: smooth;
+            }
+
+            html{
+                scroll-behavior: smooth;
+            }
+        </style>
+    </body>
+</html>
