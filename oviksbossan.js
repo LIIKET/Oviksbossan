@@ -37,6 +37,7 @@ async function getDonations(start) {
     while(true){
         await new Promise(resolve => setTimeout(resolve, 5000));
         const donations = await getDonations(0);
+        console.log("polling server");
 
         for(donation of donations){
 
