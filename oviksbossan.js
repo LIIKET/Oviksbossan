@@ -3,8 +3,8 @@ const fs = require('fs');
 
 async function getDonations(start) {
     return new Promise((resolve, reject) => {
-
-        https.get(`https://bossan.musikhjalpen.se/api/fundraisers/donations/3dfjkM0bfHzJIO5Hfk2zag/${start}`, res => {
+        
+        https.get(`https://bossan.musikhjalpen.se/api/fundraisers/donations/5mopODrErReGLUxWlM7otv/${start}`, res => { //https://bossan.musikhjalpen.se/api/fundraisers/donations/3dfjkM0bfHzJIO5Hfk2zag
 
             let data = [];    
             res.on('data', chunk => {
@@ -36,14 +36,22 @@ async function getDonations(start) {
 
     while(true){
         await new Promise(resolve => setTimeout(resolve, 5000));
-        const donations = await getDonations(0);
+        let donations = await getDonations(0);
         console.log("polling server");
+        donations = null;
+        //for(donation of donations){
+//
+        //    if(!result.find(d => d.timestamp === donation.timestamp)){
+        //        result.push(donation);
+        //    }       
+        //}
 
-        for(donation of donations){
+        for (var i = donations?.length - 1; i >= 0; i--) {
+            const donation = donations[i];
 
             if(!result.find(d => d.timestamp === donation.timestamp)){
                 result.push(donation);
-            }       
+            }   
         }
 
         fs.writeFileSync(fileName, JSON.stringify(result)); //, null, 4

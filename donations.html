@@ -22,19 +22,19 @@
                             if(request.status === 200 || request.status == 0)
                             {
                                 let donations = JSON.parse(request.responseText);
-                                donations = donations.slice(1).slice(-10);
+                                donations = donations.slice(0).slice(-10);
 
                                 let allDonationElements = Array.from(donationCardsDiv.childNodes);
                                 let donationElementsToAppend = [];
                                 
                                 for(donation of donations){
                                     let name = donation.public ? donation.name : 'anonym';
-                                    let message = donation.message;
+                                    let message = donation.message + 'a';
                                     let amount = donation.hidden_amount ? `` : `${donation.amount}kr`;
 
                                     if(!allDonationElements.find(e => e.dataset.timestamp === donation.timestamp)){
                                         let el = document.createElement('div');
-                                        el.innerHTML = `<p>${donation.name} ${amount} ${message}</p>`;
+                                        el.innerHTML = `<p>${name} ${amount} ${message}</p>`;
                                         el.dataset.timestamp = donation.timestamp;
                                         donationElementsToAppend.push(el);
                                     }
@@ -58,7 +58,7 @@
                 background: green;
                 color: white;
                 overflow-y: hidden;
-                max-height: 80px;
+                max-height: 300px;
                 scroll-behavior: smooth;
             }
 

@@ -1,0 +1,202 @@
+[
+  {
+    "amount": 50,
+    "hidden_amount": false,
+    "public": true,
+    "name": "Olle Bajsson",
+    "message": "Gud vad knasigt?",
+    "timestamp": "2021-12-03654T08:00:44.209Z"
+  },
+  {
+    "amount": 50,
+    "hidden_amount": false,
+    "public": true,
+    "name": "Olle Bajsson",
+    "message": "Gud vad kul ni har! ÄCKEL",
+    "timestamp": "2021-12-03020T08:00:44.209Z"
+  },
+  {
+    "amount": 50,
+    "hidden_amount": false,
+    "public": true,
+    "name": "Olle Bajsson",
+    "message": "Gud vad kul ni har! ÄCKEL",
+    "timestamp": "2021-12-03T08:00:44.209Z"
+  },
+  {
+    "amount": 50,
+    "hidden_amount": false,
+    "public": false,
+    "name": "",
+    "message": "",
+    "timestamp": "2021-12-03T16:30:08.911Z"
+  },
+  {
+    "amount": 100,
+    "hidden_amount": false,
+    "public": true,
+    "name": "Henrik Kristensson",
+    "message": "",
+    "timestamp": "2021-12-03T19:10:34.864Z"
+  },
+  {
+    "amount": 0,
+    "hidden_amount": true,
+    "public": false,
+    "name": "",
+    "message": "",
+    "timestamp": "2021-12-06T09:09:01.773Z"
+  },
+  {
+    "amount": 300,
+    "hidden_amount": false,
+    "public": false,
+    "name": "",
+    "message": "",
+    "timestamp": "2021-12-07T18:10:10.213Z"
+  },
+  {
+    "amount": 100,
+    "hidden_amount": false,
+    "public": true,
+    "name": "Henrik Kristensson",
+    "message": "",
+    "timestamp": "2021-12-03T19:10:34.864Z"
+  },
+  {
+    "amount": 100,
+    "hidden_amount": false,
+    "public": true,
+    "name": "Henrik Kristensson",
+    "message": "",
+    "timestamp": "2021-12-03T19:10:34.864Z"
+  },
+  {
+    "amount": 100,
+    "hidden_amount": false,
+    "public": true,
+    "name": "Henrik Kristensson",
+    "message": "",
+    "timestamp": "2021-12-03T19:10:34.864Z"
+  },
+  {
+    "amount": 50,
+    "hidden_amount": false,
+    "public": true,
+    "name": "Olle Bajsson",
+    "message": "Gud vad kul ni har! ÄCKEL",
+    "timestamp": "2021-12-03Tliuih08:00:44.209Z"
+  },
+  {
+    "amount": 50,
+    "hidden_amount": false,
+    "public": true,
+    "name": "Olle Bajsson",
+    "message": "Här står det något konstigt?",
+    "timestamp": "2021-12-03T0liuh8:00:44.209Z"
+  },
+  {
+    "amount": 50,
+    "hidden_amount": false,
+    "public": true,
+    "name": "Olle Bajsson",
+    "message": "Här står det något konstigt?",
+    "timestamp": "2021-12-03T0sdgiuh8:00:44.209Z"
+  },
+  {
+    "amount": 50,
+    "hidden_amount": false,
+    "public": true,
+    "name": "Olle Bajsson",
+    "message": "HELLO WORLD!",
+    "timestamp": "2021-12-03Tadfuh8:00:44.209Z"
+  },
+  {
+    "amount": 50,
+    "hidden_amount": false,
+    "public": false,
+    "name": "",
+    "message": "HELLO WORLD!",
+    "timestamp": "2021-12-03Tadsadfuh8:00:44.209Z"
+  },
+  {
+    "amount": 50,
+    "hidden_amount": true,
+    "public": true,
+    "name": "Börje",
+    "message": "",
+    "timestamp": "2021-12-03Tadfafssdsadfuh8:00:44.209Z"
+  },
+  {
+    "amount": 500,
+    "hidden_amount": true,
+    "public": true,
+    "name": "Hubert",
+    "message": "",
+    "timestamp": "2021-safssdsadfuh8:00:44.209Z"
+  },
+  {
+    "amount": 50,
+    "hidden_amount": true,
+    "public": true,
+    "name": "Apan",
+    "message": "",
+    "timestamp": "2021-12-03Taasdg:00:44.209Z"
+  },
+  {
+    "amount": 50,
+    "hidden_amount": true,
+    "public": true,
+    "name": "Åke",
+    "message": "",
+    "timestamp": "2021-12-03Taasdgöoih:44.209Z"
+  },
+  {
+    "amount": 50,
+    "hidden_amount": false,
+    "public": true,
+    "name": "Henrik Larsson",
+    "message": "",
+    "timestamp": "2021-12-03Taassdf44.209Z"
+  },
+  {
+    "amount": 55,
+    "hidden_amount": false,
+    "public": true,
+    "name": "Sven Larsson",
+    "message": "",
+    "timestamp": "2021-12-03j209Z"
+  },
+  {
+    "amount": 55,
+    "hidden_amount": false,
+    "public": true,
+    "name": "högst",
+    "message": "",
+    "timestamp": "2021-12-03j209Zas"
+  },
+  {
+    "amount": 55,
+    "hidden_amount": false,
+    "public": true,
+    "name": "högstasd",
+    "message": "",
+    "timestamp": "20s21-12-03j209asdZas"
+  },
+  {
+    "amount": 55,
+    "hidden_amount": false,
+    "public": true,
+    "name": "högstasd111",
+    "message": "",
+    "timestamp": "20s21-12asd-03j209asdZas"
+  },
+  {
+    "amount": 55,
+    "hidden_amount": false,
+    "public": true,
+    "name": "asd",
+    "message": "",
+    "timestamp": "20s21-12sasd-03j209asdZas"
+  }
+]
